@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+header, img {
+  height: 35px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  right: 10px;
+}
+
+a {
+  display: block;
+  text-align: right;
+  background-color: rgba(0,0,0, .80);
+  padding: 5px;
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+nav {
+  margin-top: -5px;
+}
+
+main {
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+  nav {
+    display: inline-block;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  a {
+    display: inline-block;
+  }
+}

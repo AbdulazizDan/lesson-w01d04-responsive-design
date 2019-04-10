@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+header, footer {
+  background-color: #bbb;
+  height: 10vh;
+}
+
+main {
+  height: 80vh;
+  width: 75vw;
+  background-color: #ddd;
+  display: inline-block;
+}
+
+aside {
+  height: 80vh;
+  width: 25vw;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  main, aside {
+    width: 100vw;
+  }
+
+  header, main, aside, footer {
+    height: 50vh;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
